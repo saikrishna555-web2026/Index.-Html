@@ -1,1 +1,36 @@
+html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+   body { background-color: #f0f0f0; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; font-family: Arial, sans-serif; }
+   .card { background-color: #FFFDE7; border-radius: 15px; padding: 20px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2); width: 300px; border: 2px solid #FFD700; }
+   .name { color: #E65100; font-size: 28px; margin: 10px 0; font-weight: bold; }
+   .info { font-size: 18px; color: #333; margin: 5px 0; }
+   .btn { color: white; padding: 10px; border-radius: 5px; text-align: center; text-decoration: none; display: block; margin: 10px 0; font-weight: bold; }
+   /* ఫోటోను రౌండ్ గా మరియు అందంగా మార్చడానికి */
+   .profile-img { border-radius: 50%; width: 150px; height: 150px; object-fit: cover; border: 3px solid #FFD700; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+</style>
+</head>
+<body>
 
+<div class="card">
+   <img src="https://i.postimg.cc/m26m8v7y/saibaba.jpg" alt="Sai Baba" class="profile-img">
+   
+   <h1 class="name">Om Sai Ram</h1>
+   <p class="info">📍 Location: India</p>
+   <p class="info">🙏 Devotee of Sai Baba</p>
+   
+   <hr style="margin: 20px 0; border: 0; border-top: 1px solid #FFD700;">
+
+   <a href="tel:9494371458" class="btn" style="background-color: #25D366;">📞 Call Me</a>
+
+   <a href="mailto:saikrishnamogalla@gmail.com" class="btn" style="background-color: #D44638;">📧 Email Me</a>
+
+   <p style="font-size: 13px; color: #777; font-style: italic; margin-top: 20px;">
+      In loving memory of my beloved Parents (2010) 🙏
+   </p>
+</div>
+
+</body>
+</html>
