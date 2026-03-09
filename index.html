@@ -1,69 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="te">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRASAD M. M. - Digital Card</title>
+    <title>MEHAR PRASAD.MOGALLA Card</title>
     <style>
-        body { 
-            margin: 0; padding: 0; height: 100vh; display: flex; justify-content: center; align-items: center;
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); 
-            font-family: 'Segoe UI', Arial, sans-serif;
-        }
-        #password-screen {
-            background: white; padding: 30px; border-radius: 20px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-            width: 280px;
-        }
-        input { padding: 12px; border-radius: 8px; border: 1px solid #ccc; margin-bottom: 15px; width: 85%; font-size: 16px; text-align: center; }
-        button { padding: 12px 25px; background: #1e3c72; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; width: 95%; }
-        #main-card { display: none; }
-        .card { 
-            background: white; padding: 45px 25px; border-radius: 35px; 
-            text-align: center; width: 320px; box-shadow: 0 25px 60px rgba(0,0,0,0.4);
-        }
-        h2 { color: #1e3a8a; font-size: 28px; margin-bottom: 8px; font-weight: bold; text-transform: uppercase; }
-        .agm { color: #333; font-size: 16px; font-weight: 700; margin-bottom: 5px; }
-        .company { color: #666; font-size: 14px; margin-bottom: 35px; font-style: italic; }
-        .btn-container { display: flex; flex-direction: column; gap: 18px; }
-        .btn { text-decoration: none; padding: 16px; border-radius: 50px; color: white; font-weight: bold; font-size: 18px; display: block; }
-        .call { background: linear-gradient(to right, #11998e, #38ef7d); }
-        .wa { background: linear-gradient(to right, #25D366, #128C7E); }
+        body { font-family: Arial, sans-serif; background-color: #f0f2f5; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .card { background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); text-align: center; width: 300px; }
+        h2 { color: #333; margin-bottom: 5px; }
+        p { color: #666; margin-bottom: 25px; }
+        .btn { display: block; width: 100%; padding: 12px; margin: 10px 0; border-radius: 10px; text-decoration: none; font-weight: bold; font-size: 16px; transition: 0.3s; }
+        .call { background-color: #28a745; color: white; }
+        .whatsapp { background-color: #25D366; color: white; }
+        .btn:hover { opacity: 0.8; }
     </style>
 </head>
 <body>
-
-    <div id="password-screen">
-        <h3 style="color: #1e3c72;">🔒 Private Card</h3>
-        <p style="font-size: 14px; color: #666;">దయచేసి పాస్‌వర్డ్ ఎంటర్ చేయండి</p>
-        <input type="password" id="passInput" placeholder="Password ఇక్కడ రాయండి">
-        <br>
-        <button onclick="checkPassword()">Open Card</button>
+    <div class="card">
+        <h2> MEHAR PRASAD.MOGALLA</h2>
+        <p>డిజిటల్ విజిటింగ్ కార్డ్</p>
+        <a href="tel:918527784789" class="btn call">📞 కాల్ చేయండి</a>
+        <a href="https://wa.me/918527784789" class="btn whatsapp">💬 వాట్సాప్</a>
     </div>
-
-    <div id="main-card">
-        <div class="card">
-            <h2>PRASAD M. M.</h2>
-            <div class="agm">Assistant General Manager {AGM}</div>
-            <div class="company">Navayuga Engineering Company</div>
-            <div class="btn-container">
-                <a href="tel:+918527784789" class="btn call">📞 CALL PRASAD</a>
-                <a href="https://wa.me/918527784789" class="btn wa">💬 WHATSAPP</a>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        function checkPassword() {
-            var password = document.getElementById("passInput").value;
-            // మీ పాస్‌వర్డ్ '2006' సెట్ చేశాను
-            if (password === "2006") {
-                document.getElementById("password-screen").style.display = "none";
-                document.getElementById("main-card").style.display = "flex";
-            } else {
-                alert("తప్పు పాస్‌వర్డ్! మళ్ళీ ప్రయత్నించండి.");
-            }
-        }
-    </script>
 </body>
 </html>
 
