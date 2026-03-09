@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="te">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,57 +15,50 @@
             width: 280px;
         }
         input { padding: 12px; border-radius: 8px; border: 1px solid #ccc; margin-bottom: 15px; width: 80%; font-size: 16px; text-align: center; }
-        button { padding: 12px 25px; background: #1e3c72; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; width: 90%; }
+        button { padding: 12px 25px; background: #b21f1f; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; width: 95%; }
         #main-card { display: none; }
         .card { 
-            background: white; padding: 45px 25px; border-radius: 35px; 
-            text-align: center; width: 320px; box-shadow: 0 25px 60px rgba(0,0,0,0.4);
+            background: white; padding: 40px 20px; border-radius: 25px; 
+            text-align: center; width: 310px; border: 4px solid #ffd700;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
         }
-        h2 { color: #1e3a8a; font-size: 28px; margin-bottom: 8px; font-weight: bold; text-transform: uppercase; }
-        .agm { color: #333; font-size: 16px; font-weight: 700; margin-bottom: 5px; }
-        .company { color: #666; font-size: 14px; margin-bottom: 35px; font-style: italic; }
-        .btn-container { display: flex; flex-direction: column; gap: 18px; }
-        .btn { text-decoration: none; padding: 16px; border-radius: 50px; color: white; font-weight: bold; font-size: 18px; display: block; }
+        h2 { color: #b21f1f; font-size: 26px; margin-bottom: 5px; }
+        .agm { color: #333; font-weight: bold; margin-bottom: 25px; border-bottom: 2px solid #ffd700; display: inline-block; padding-bottom: 5px; }
+        .btn { 
+            text-decoration: none; padding: 15px; border-radius: 50px; color: white; 
+            font-weight: bold; font-size: 18px; display: block; margin: 10px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
         .call { background: linear-gradient(to right, #11998e, #38ef7d); }
         .wa { background: linear-gradient(to right, #25D366, #128C7E); }
     </style>
 </head>
 <body>
-
     <div id="password-screen">
-        <h3 style="color: #1e3c72;">🔒 Private Card</h3>
-        <p style="font-size: 14px; color: #666;">దయచేసి పాస్‌వర్డ్ ఎంటర్ చేయండి</p>
-        <input type="password" id="passInput" placeholder="Enter Password">
-        <br>
-        <button onclick="checkPassword()">Open Card</button>
+        <h3 style="color: #b21f1f;">🔒 Private Card</h3>
+        <p>పాస్‌వర్డ్ ఎంటర్ చేయండి</p>
+        <input type="password" id="passInput" placeholder="Password రాయండి">
+        <button onclick="checkPassword()">OPEN CARD</button>
     </div>
-
     <div id="main-card">
         <div class="card">
             <h2>PRASAD M. M.</h2>
-            <div class="agm">Assistant General Manager {AGM}</div>
-            <div class="company">Navayuga Engineering Company</div>
-            <div class="btn-container">
-                <a href="tel:+918527784789" class="btn call">📞 CALL ME</a>
-                <a href="https://wa.me/918527784789" class="btn wa">💬 WHATSAPP</a>
-            </div>
+            <div class="agm">Assistant General Manager (AGM)</div>
+            <p style="color: #666; font-weight: bold;">Navayuga Engineering Company</p>
+            <a href="tel:+918527784789" class="btn call">📞 CALL ME</a>
+            <a href="https://wa.me/918527784789" class="btn wa">💬 WHATSAPP</a>
         </div>
     </div>
-
     <script>
         function checkPassword() {
             var password = document.getElementById("passInput").value;
-            // ఇక్కడ ఉన్న "2006" ని మీరు మార్చుకోవచ్చు
-            if (password === "2006") {
+            if (password === "1968") {
                 document.getElementById("password-screen").style.display = "none";
-                document.getElementById("main-card").style.display = "flex";
+                document.getElementById("main-card").style.display = "block";
             } else {
-                alert("తప్పు పాస్‌వర్డ్! మళ్ళీ ప్రయత్నించండి.");
+                alert("తప్పు పాస్‌వర్డ్!");
             }
         }
     </script>
 </body>
 </html>
-
-
-
